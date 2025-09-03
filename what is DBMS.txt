@@ -1,0 +1,44 @@
+Data Bases:
+1) Persistent storage: data can store over long period of time,
+2) Concurent: multiple users can access without crupting it.
+3) Structured:
+4) Secure:
+
+DMBS: Software interface between databases and user application
+Examples of DBMS
+1) Relational DBMS: Data stores in Tables, rows, and cols. etc mysql, postgresql, oracle, sql server.
+
+2 NoSQL: json, unstructed etc mongodb, cassandra, dynamo db
+3) in memory DBMS: redis, mecached, data stores in the RAM
+
+Main Categories of SQL commands
+1) DDL data define language: Create, Alter, Drop. 
+2) DML data manipulation language: Select, Update, Insert, Delete
+3) DCL data control language: GRANT to give user privileges, Revoke : take privileges back
+4) TCL Transaction control language: Commit, Rollback, 
+
+TCP: transmission control protocol make sures the data integrety when delivers, and IP internet protocol makes sures it to deliver to destionation address.
+SCHEMA:
+Tables,
+Relation between
+Attribute
+Constraint
+*************data type:
+Number (Integer, (Floating->Decimals<- Fixed))
+Types: TinyINT 1 byte, SmallINT 2 byte, mediumint 3 byte, INTEGER  4 byte, BIGINT  8 byte, FLOAT(p) 4 byte, DOUBLE  8 byte, DECIMAL varies
+*********************************************************************
+String Types:
+char vs Varchar 
+has to be fixed length for etc, char(4) will be if i have 2 letters, PK__, or if VARCHAR(4), it will be PK, no Dashes after word, it could be < or = to the N size in case of VARCHAR
+
+VARCHAR vs TEXT
+better	    not better
+fully index  cant fully index
+
+CREATE TABLE product_details (
+	Product_id INT auto_increment Primary key,
+	Product_code char(10),
+	product_name VARCHAR(100),
+	short_description Tinytext,
+ 	detailed_description text,
+ 	full_manual text,
